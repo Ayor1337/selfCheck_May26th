@@ -15,7 +15,7 @@ fun(n) {
 
 int main() {
     int n;
-    printf("Enter n");
+    printf("Enter n: ");
     scanf("%d", &n);
     printf("The result:%d\n\n", fun(n));
 }
