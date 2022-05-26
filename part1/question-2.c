@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-void fun(n) {
+fun(n) {
     int c;
     if (n = 1)
         c = 10;
