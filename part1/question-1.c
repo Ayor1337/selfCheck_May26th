@@ -8,15 +8,19 @@ long fun(int g){
     switch (g) {
         case 0:
             return 0;
-        case 1 ___1___: return 1;
+        case 1:
+            return 1;
+        case 2:
+            return 1;
     }
-    return (___2___);
+    return (fun(g - 1) + fun(g - 2));
 }
 
 int main() {
-    long fib, int n;
+    long fib;
+    int n;
     printf("Input n:");
-    scanf("%d",___3___);
+    scanf("%d", &n);
     printf("n=%d\n", n);
     fib = fun(n);
     printf("fib = %d\n\n", fib);
