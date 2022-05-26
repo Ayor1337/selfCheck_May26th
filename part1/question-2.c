@@ -4,9 +4,9 @@
 
 #include <stdio.h>
 
-void fun(n) {
+int fun(n) {
     int c;
-    if (n = 1)
+    if (n == 1)
         c = 10;
     else
         c = fun(n - 1) + 2;
@@ -15,7 +15,7 @@ void fun(n) {
 
 int main() {
     int n;
-    printf("Enter n");
+    printf("Enter n: ");
     scanf("%d", &n);
     printf("The result:%d\n\n", fun(n));
 }
